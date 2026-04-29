@@ -48,6 +48,6 @@ jobs:
       # 🚀 DEPLOY
       - name: Sync dist to S3
         env:
-          S3_BUCKET: appwebaep
+          S3_BUCKET: integracioncontinuados
         run: |
           aws s3 sync clienteweb/dist s3://$S3_BUCKET --delete
